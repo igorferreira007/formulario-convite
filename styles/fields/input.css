@@ -1,0 +1,28 @@
+input,
+textarea {
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.8rem;
+  padding: 1.3rem 1.6rem;
+  font: var(--text-md);
+  color: var(--text-heading);
+  width: 100%;
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
+}
+
+textarea {
+  max-width: 56rem;
+  min-height: 13.6rem;
+}
+
+input[type="date"] {
+  height: 5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+}

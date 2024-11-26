@@ -1,0 +1,43 @@
+#app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  background-image: url(../assets/Background.png);
+  background-size: cover;
+  padding: 3.2rem;
+
+  img {
+    margin-bottom: 1.6rem;
+  }
+
+  h1 {
+    font: var(--logo);
+    color: var(--pink);
+    margin-bottom: .4rem;
+  }
+
+  p {
+    color: var(--text-heading);
+    font-weight: 300;
+  }
+}
+
+main {
+  height: 100vh;
+  overflow: auto;
+  padding: 8rem 13rem;
+
+  .main-container {
+    max-width: 56rem;
+
+    h2 {
+      font: var(--h2);
+      color: var(--text-heading);
+      margin-bottom: 4rem;
+    }
+  }
+}

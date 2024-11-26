@@ -1,0 +1,40 @@
+.radio-wrapper {
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.8rem;
+  padding: .4rem;
+}
+
+.radio-inner {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.05rem 1.8rem;
+  border-radius: .4rem;
+  position: relative;
+  width: 100%;
+
+  input,
+  input:focus,
+  input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  label {
+    color: var(--text-heading);
+    font-weight: 600;
+  }
+
+  &:has(:checked),
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-button);
+
+    svg path {
+      fill: var(--brand-light);
+    }
+  }
+}
