@@ -1,5 +1,10 @@
 @import url(./fields/index.css);
 
+form {
+  max-width: 56rem;
+  margin: auto;
+}
+
 fieldset {
   border: none;
 }

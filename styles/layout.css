@@ -41,15 +41,11 @@ main {
 
   padding: 3.2rem;
 
-  &::-webkit-scrollbar {
-    
-  }
-
   .main-container {
     /* max-width: 56rem; */
     max-width: 82rem;
     background-color: var(--shape-body);
-    padding: 8rem 13rem;
+    padding: 8rem 3.2rem;
     border-radius: 1.2rem;
 
     h2 {
