@@ -4,6 +4,10 @@ fieldset {
   border: none;
 }
 
+fieldset + fieldset {
+  margin-top: 4.8rem;
+}
+
 legend {
   display: flex;
   align-items: center;
@@ -16,6 +20,13 @@ legend {
   }
 }
 
+hr {
+  border: none;
+  margin-top: 4.8rem;
+  height: 1px;
+  background-color: var(--input-stroke);
+}
+
 .input-wrapper {
   display: grid;
   gap: 1.2rem;
@@ -23,5 +34,46 @@ legend {
 
   label {
     font: var(--text-sm);
+  }
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  p {
+    font: var(--text-sm);
+    color: var(--text-heading);
+  }
+}
+
+.personalization-wrapper label {
+  font: var(--text-sm);
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.4rem, 1fr));
+  gap: .8rem;
+}
+
+.ticket {
+  background-color: var(--brand-dark);
+  border: none;
+  border-radius: .8rem;
+  color: var(--text-heading);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.3rem 2rem;
+  font: var(--text-md);
+  font-weight: 600;
+  margin-top: 4.8rem;
+  margin-left: auto;
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--brand-mid);
   }
 }

@@ -1,0 +1,31 @@
+.file-selected {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.file-wrapper {
+  position: relative;
+  background-color: var(--shape-button);
+  padding: 1.2rem;
+  border-radius: .8rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+
+  #cover-photo {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+
+  label {
+    color: var(--text-heading);
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-hover);
+  }
+}

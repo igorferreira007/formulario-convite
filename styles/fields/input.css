@@ -26,3 +26,31 @@ input:focus,
 textarea:focus {
   outline: 1px solid var(--brand-light);
 }
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    border: 1px solid var(--stroke-default);
+
+    color: var(--text-primary);
+  }
+
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+
+    font: var(--text-sm);
+    color: var(--danger);
+
+    margin-top: .4rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}

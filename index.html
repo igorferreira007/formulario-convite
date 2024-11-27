@@ -17,9 +17,11 @@
   <body>
     <div id="app">
       <aside>
-        <img src="./assets/Logo.svg" alt="" />
-        <h1>Festivite</h1>
-        <p>Crie um convite digital para o seu evento</p>
+        <div class="aside-content">
+          <img src="./assets/Logo.svg" alt="" />
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </div>
       </aside>
       <main>
         <div class="main-container">
@@ -114,9 +116,324 @@
                 </div>
               </div>
             </fieldset>
+
+            <fieldset>
+              <legend>
+                <img src="./assets/paintbrush-vertical.svg" alt="" />
+                <h3>Personalização</h3>
+              </legend>
+
+              <div class="grid gap-28">
+                <div class="personalization-wrapper grid gap-16">
+                  <label for="">Cor principal</label>
+
+                  <div class="flex gap-12 flex-wrap">
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="brand-light" />
+                      <div
+                        class="color"
+                        style="background-color: var(--brand-light)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="navy" />
+                      <div
+                        class="color"
+                        style="background-color: var(--navy)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="purple" />
+                      <div
+                        class="color"
+                        style="background-color: var(--purple)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="fuschia" />
+                      <div
+                        class="color"
+                        style="background-color: var(--fuschia)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="pink" />
+                      <div
+                        class="color"
+                        style="background-color: var(--pink)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="danger" />
+                      <div
+                        class="color"
+                        style="background-color: var(--danger)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="orange" />
+                      <div
+                        class="color"
+                        style="background-color: var(--orange)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="yellow" />
+                      <div
+                        class="color"
+                        style="background-color: var(--yellow)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="lime" />
+                      <div
+                        class="color"
+                        style="background-color: var(--lime)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="green" />
+                      <div
+                        class="color"
+                        style="background-color: var(--green)"
+                      ></div>
+                    </div>
+                    <div class="color-radio">
+                      <input type="radio" name="color" id="cyan" />
+                      <div
+                        class="color"
+                        style="background-color: var(--cyan)"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="personalization-wrapper grid gap-16">
+                  <label for="">Tema do evento</label>
+
+                  <div class="card-wrapper">
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="birthday" />
+                      <img src="./assets/Image.png" alt="" />
+                      <p>Aniversário</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="childish" />
+                      <img src="./assets/Image-1.png" alt="" />
+                      <p>Infantil</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="graduation" />
+                      <img src="./assets/Image-2.png" alt="" />
+                      <p>Formatura</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="marriage" />
+                      <img src="./assets/Image-3.png" alt="" />
+                      <p>Casamento</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="baby-shower" />
+                      <img src="./assets/Image-4.png" alt="" />
+                      <p>Chá de bebê</p>
+                    </div>
+
+                    <div class="card">
+                      <input
+                        type="radio"
+                        name="event-theme"
+                        id="bridal-shower"
+                      />
+                      <img src="./assets/Image-5.png" alt="" />
+                      <p>Chá de panela</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="carnival" />
+                      <img src="./assets/Image-6.png" alt="" />
+                      <p>Carnaval</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="easter" />
+                      <img src="./assets/Image-7.png" alt="" />
+                      <p>Páscoa</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="sao-joao" />
+                      <img src="./assets/Image-8.png" alt="" />
+                      <p>São João</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="halloween" />
+                      <img src="./assets/Image-9.png" alt="" />
+                      <p>Halloween</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="christmas" />
+                      <img src="./assets/Image-10.png" alt="" />
+                      <p>Natal</p>
+                    </div>
+
+                    <div class="card">
+                      <input type="radio" name="event-theme" id="other" />
+                      <img src="./assets/Image-11.png" alt="" />
+                      <p>Outro</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex">
+                  <div class="personalization-wrapper grid gap-16 flex-1">
+                    <label for="">Estilo</label>
+
+                    <div class="toggle-wrapper">
+                      <div class="switch-toggle">
+                        <input type="checkbox" name="" id="theme-toggle" />
+                        <div class="circle-toggle"></div>
+                      </div>
+                      <p id="theme">Escuro</p>
+                    </div>
+                  </div>
+
+                  <div class="personalization-wrapper grid gap-16 flex-2">
+                    <label for="">Foto de capa</label>
+
+                    <div class="file-selected">
+                      <div class="file-wrapper">
+                        <input
+                          type="file"
+                          name="cover-photo"
+                          id="cover-photo"
+                          accept="image/png, image/jpeg"
+                        />
+                        <img src="./assets/upload.svg" alt="" />
+                        <label for="cover-photo">Selecionar</label>
+                      </div>
+
+                      <p id="file-name">Nenhum arquivo selecionado</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>
+                <img src="./assets/contact.svg" alt="" />
+                <h3>Dados para contato</h3>
+              </legend>
+
+              <div class="grid gap-16">
+                <div class="input-wrapper">
+                  <label for="name">Nome</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Nome completo"
+                    required
+                  />
+
+                  <div class="error">
+                    <img src="./assets/circle-alert.svg" alt="" />
+                    <span>Campo obrigatório</span>
+                  </div>
+                </div>
+
+                <div class="flex gap-16">
+                  <div class="input-wrapper">
+                    <label for="email">E-mail</label>
+                    <input
+                      type="mail"
+                      id="email"
+                      placeholder="exemplo@email.com"
+                    />
+                  </div>
+                  <div class="input-wrapper">
+                    <label for="phone">Telefone</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="(99) 99999-9999 "
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <hr />
+
+            <div class="terms-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms"
+                >Li e concordo com os <span>Termos e Condições</span> e com a
+                <span>Política de Privacidade</span></label
+              >
+            </div>
+            <div class="terms-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms-email" id="terms-email" />
+              <label for="terms-email"
+                >Aceito receber atualizações e promoções por e-mail</label
+              >
+            </div>
+            <div class="terms-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms-sms" id="terms-sms" />
+              <label for="terms-sms"
+                >Aceito receber atualizações e promoções por SMS</label
+              >
+            </div>
+
+            <button type="button" class="ticket">
+              <img src="./assets/ticket.svg" alt="" />
+              Gerar convite
+            </button>
           </form>
         </div>
       </main>
     </div>
+
+    <script>
+      // Obtém o checkbox e o elemento <p> que será alterado
+      const themeToggle = document.getElementById("theme-toggle")
+      const themeText = document.getElementById("theme")
+
+      const coverPhoto = document.getElementById("cover-photo")
+      const fileName = document.getElementById("file-name")
+
+      // Função que altera o texto com base no estado do checkbox
+      function updateThemeText() {
+        if (themeToggle.checked) {
+          themeText.textContent = "Claro"
+        } else {
+          themeText.textContent = "Escuro"
+        }
+      }
+
+      function updateFileName() {
+        if (coverPhoto.files.length) {
+          const newFileName = coverPhoto.files[0].name
+          fileName.textContent = newFileName
+        } else {
+          fileName.textContent = "Nenhum arquivo escolhido"
+        }
+      }
+
+      // Adiciona um ouvinte de evento para monitorar mudanças no checkbox
+      themeToggle.addEventListener("change", updateThemeText)
+      coverPhoto.addEventListener("change", updateFileName)
+
+      // Chama a função uma vez para definir o texto inicial
+      updateThemeText()
+    </script>
   </body>
 </html>

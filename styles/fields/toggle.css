@@ -1,0 +1,39 @@
+.switch-toggle {
+  width: 6.4rem;
+  height: 3.2rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 999px;
+  padding: .3rem .4rem;
+  position: relative;
+
+  input[type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-body);
+  }
+
+  &:has(:checked) {
+    background-color: var(--brand-light);
+
+    .circle-toggle {
+      transform: translateX(3rem); /* Move o círculo para a direita */
+      background-color: var(--text-heading);
+    }
+  }
+}
+
+.circle-toggle {
+  width: 24px;
+  height: 24px;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform: translateX(0);
+}

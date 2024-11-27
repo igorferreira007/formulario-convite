@@ -45,8 +45,11 @@
 
 body {
   font: var(--text-md);
-  background-color: var(--shape-body);
+  background-color: var(--shape-background);
   color: var(--text-body);
+
+  /* display: flex;
+  justify-content: center; */
 }
 
 .flex {
@@ -57,8 +60,24 @@ body {
   flex: 1;
 }
 
+.flex-2 {
+  flex: 2;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-12 {
+  gap: 1.2rem;
+}
+
 .gap-16 {
   gap: 1.6rem;
+}
+
+.gap-28 {
+  gap: 2.8rem;
 }
 
 .grid {

@@ -1,0 +1,31 @@
+.color-radio {
+  background-color: var(--shape-button);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: .6rem;
+
+  position: relative;
+
+  input[type="radio"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-hover);
+  }
+
+  &:has(:checked) {
+    border: 2px solid var(--brand-light);
+    background-color: var(--shape-button);
+  }
+
+  .color {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
